@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+    --white : #EFEFEF;
+    --black : #222222;
+    --grey  : #AAAAAA;
+    --green1: #B8B42D;
+    --green2: #697A21;
+    --red1  : #A52422;
+    --red2  : #DD1155;
+    --purple: #7678ED;
+    --font  : "Press Start 2P", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+* {
+    padding        : 0;
+    margin         : 0;
+    scrollbar-color: var(--green1) var(--black);
+    scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+    width: 0.3rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--black);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--green1);
+}
+
+html {
+    font-size  : calc(1em + 1vw);
+    line-height: calc(1em + 1.5vw);
+    color      : var(--black);
+}
+
+body {
+    user-select        : none;
+    -webkit-user-select: none;
+}
+
+body::selection {
+    background: none;
+}
+
+body::-moz-selection {
+    background: none;
+}
+
+h2 {
+    line-height: 1.5em;
+}
+
+p {
+    padding-top   : 1em;
+    padding-bottom: 1em;
+    line-height   : 1.5em;
+}
+
+#placeholder {
+    display         : flex;
+    background-color: var(--green1);
+}
+
+#game {
+    background           : var(--black);
+    width                : 100vmin;
+    height               : 100vmin;
+    display              : grid;
+    grid-template-rows   : repeat(20, 1fr);
+    grid-template-columns: repeat(20, 1fr);
+}
+
+#pauseResume {
+    background : transparent;
+    border     : 5px dotted var(--black);
+    padding    : 15px;
+    font-size  : xx-large;
+    font-family: var(--font);
+    color      : var(--black);
+    cursor     : pointer;
+    margin-top : 40px;
+}
+
+#pauseResume:hover {
+    border: 5px dotted var(--red1);
+    color : var(--red1);
+}
+
+#pauseResume:focus {
+    outline   : none;
+    box-shadow: none;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width             : 100%;
+    height            : 25px;
+    background        : var(--black);
+    outline           : none;
+    opacity           : 0.7;
+    -webkit-transition: .2s;
+    transition        : opacity .2s;
+    margin-top        : 20px;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance        : none;
+    width             : 25px;
+    height            : 25px;
+    background        : var(--green2);
+    cursor            : pointer;
+    border-radius     : 5px;
+}
+
+.slider::-moz-range-thumb {
+    width        : 25px;
+    height       : 25px;
+    background   : var(--green2);
+    cursor       : pointer;
+    border-radius: 5px;
+}
+
+.panel {
+    padding: 30px;
+}
+
+.info {
+    font-family   : var(--font);
+    width         : 90vmin;
+    display       : flex;
+    flex-direction: column;
+    align-items   : flex-end;
+    padding       : 40px;
+}
+
+.snake {
+    border: 1vmin solid var(--white);
+}
+
+.head {
+    background-color: var(--red2);
+}
+
+.body {
+    background-color: var(--purple);
+}
+
+.food {
+    background-color   : var(--green2);
+    border             : 1.25vmin solid var(--white);
+    border-radius      : 3vmin;
+}
+
+.modal {
+    display         : block;
+    position        : fixed;
+    z-index         : 1;
+    padding-top     : 100px;
+    left            : 0;
+    top             : 0;
+    width           : 100%;
+    height          : 100%;
+    overflow        : auto;
+    background-color: rgba(0, 0, 0, 0.75);
+    font-family     : var(--font);
+}
+
+.modal-content {
+    margin          : auto;
+    padding         : 30px;
+    width           : 80%;
+    overflow-x      : hidden;
+    overflow-y      : scroll;
+    max-height      : 60vh;
+    color           : var(--green1);
+    background-color: var(--black);
+}
+
+.close {
+    color      : var(--grey);
+    float      : right;
+    font-weight: bold;
+    font-size  : xxx-large;
+}
+
+.close:hover,
+.close:focus {
+    color          : var(--white);
+    text-decoration: none;
+    cursor         : pointer;
+}
+
+.startBtn {
+    justify-content: center;
+    width          : 100%;
+    display        : flex;
+}
+
+.startBtn button {
+    background : transparent;
+    border     : 5px dotted var(--grey);
+    padding    : 15px;
+    font-size  : xx-large;
+    font-family: var(--font);
+    color      : var(--grey);
+    cursor     : pointer;
+}
+
+.startBtn button:hover,
+.startBtn button:focus {
+    border: 5px dotted var(--white);
+    color : var(--white);
+}

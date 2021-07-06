@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> The Snake Returns! </title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <div id="placeholder">
+        <div id="game"></div>
+        <div class="info">
+            <div id="currScore"> Score: 0 </div>
+            <div id="hiScore"> HiScore: 0 </div>
+            <div id="currSpeed"> Speed: 3 </div>
+            <input id="speedRange" type="range" min="1" max="25" value="3" class="slider">
+            <button id="pauseResume">PAUSE!</button>
+        </div>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="closeIcon" class="close"> &times; </span>
+            <h2> Another Snake game? :P </h2>
+            <p> At some point, every engineer has build a snake game in their career! Thanks to Nokia, no other games
+                has hit this much craze in us than the good old hungry snake! </p>
+            <p> I build this one in my college days. Now looking back at this, I felt really nostalgic! </p>
+            <p> I did update some portaions of logics & UI over the old one & will continue to update more in my free
+                time in future. Reviews & suggestions are highly appreciated. </p>
+            <div id="startBtn" class="startBtn">
+                <button> START! </button>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>
