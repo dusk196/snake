@@ -1,5 +1,7 @@
 # Another SNAKE game? 😜 
 
+[**DEMO**: https://dusk196.github.io/snake/](https://dusk196.github.io/snake/)
+
 At some point, every engineer has build a snake game in their career! Thanks to Nokia, no other games has hit this much craze in us than the good old hungry snake!
 
 I build this one in my college days. Now looking back at this, I was feeling kind of nostalgic!
