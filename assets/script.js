@@ -12,6 +12,7 @@ const sounds = {
 };
 let inputDir = { x: 0, y: 0 };
 let speed = 3;
+let vol = 0.25;
 let prevTime = 0;
 let snakeArr = [{ x: randomNumber(2, 19), y: randomNumber(2, 19) }];
 let food = { x: randomNumber(8, 8), y: randomNumber(8, 8) };
@@ -163,7 +164,18 @@ function flexDirection() {
 
 speedRange.onclick = function () {
     speed = parseInt(speedRange.value);
-    currSpeed.innerHTML = 'Speed: ' + speed;
+    currSpeed.innerHTML = 'Speed (1-25): ' + speed;
+    pause = true;
+    sounds.music.pause();
+    pauseResume.innerHTML = 'RESUME!';
+};
+
+volRange.onclick = function () {
+    vol = parseInt(volRange.value);
+    currVol.innerHTML = 'Volume (1-100): ' + vol;
+    Object.keys(sounds).forEach(key => {
+        sounds[key].volume = vol / 100;
+    });
     pause = true;
     sounds.music.pause();
     pauseResume.innerHTML = 'RESUME!';
