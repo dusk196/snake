@@ -105,6 +105,7 @@ p {
     -webkit-transition: .2s;
     transition        : opacity .2s;
     margin-top        : 20px;
+    margin-bottom     : 20px;
 }
 
 .slider:hover {
@@ -155,9 +156,9 @@ p {
 }
 
 .food {
-    background-color   : var(--green2);
-    border             : 1.25vmin solid var(--white);
-    border-radius      : 3vmin;
+    background-color: var(--green2);
+    border          : 1.25vmin solid var(--white);
+    border-radius   : 3vmin;
 }
 
 .modal {
