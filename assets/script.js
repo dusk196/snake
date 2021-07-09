@@ -111,7 +111,7 @@ function refreshGame() {
         // If you have eaten the food, increment the score and regenerate the food
         if (snakeArr[0].y === food.y && snakeArr[0].x === food.x) {
             sounds.food.play();
-            score.current += 1;
+            score.current += (1 * speed);
             if (score.current > score.top) {
                 score.top = score.current;
                 localStorage.setItem("TopScore", score.top);
@@ -172,7 +172,7 @@ speedRange.onclick = function () {
 
 volRange.onclick = function () {
     vol = parseInt(volRange.value);
-    currVol.innerHTML = 'Volume (1-100): ' + vol;
+    currVol.innerHTML = 'Volume (0-100): ' + vol;
     Object.keys(sounds).forEach(key => {
         sounds[key].volume = vol / 100;
     });
