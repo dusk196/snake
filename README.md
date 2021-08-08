@@ -1,5 +1,12 @@
 # Another SNAKE game? 😜 
 
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://www.w3.org/html/)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://www.w3schools.com/css/)
+
+![Language](https://img.shields.io/github/languages/top/dusk196/snake?style=for-the-badge)
+![Size](https://img.shields.io/github/languages/code-size/dusk196/snake?style=for-the-badge)
+
 [**DEMO**: https://dusk196.github.io/snake/](https://dusk196.github.io/snake/)
 
 At some point, every engineer has build a snake game in their career! Thanks to Nokia, no other games has hit this much craze in us than the good old hungry snake!
